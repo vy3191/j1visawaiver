@@ -1,0 +1,348 @@
+/*************************
+Base Styles
+*************************/
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial;
+  background: #f9f9f9;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-container {
+    border-bottom: 20px solid #599a68;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #599a68;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #6ab47b;
+}
+
+.title {
+    color: white;
+}
+h1,h2,h3 {
+  text-shadow: 1px 2px 2px rgba(0,0,0,.3);
+}
+.teacher {
+  font-family: 'Satisfy', cursive;
+  padding-left:7px;
+  margin-top:15px;
+  font-size: 12px;
+  color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 50;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #599a68;
+}
+
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration:none;
+}
+
+.main {
+  padding: 30px 0;
+}
+
+.main article h1 {
+  font-size: 2em;
+}
+
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+.sec {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: all .25s;
+  padding: 15px 20px;
+  background: #fff;
+}
+
+.sec:hover {
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.4);
+    transform: translateY(-4px);
+ }   
+ .main aside {
+   background: rgba(0,0,0,.8);
+ }
+
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 480px) {
+
+  nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+  .teacher {
+  font-family: 'Satisfy', cursive;
+  padding-left:7px;
+  margin-top:15px;
+  font-size: 18px;
+  color: rgba(0,0,0,.7);
+  position: absolute;
+}
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 38%;
+  }
+  .teacher {
+  font-family: 'Satisfy', cursive;
+  padding-left:7px;
+  margin-top:15px;
+  font-size: 18px;
+  color: rgba(0,0,0,.7);
+  position: absolute;
+}
+
+   /***********************
+ Animation - Link
+ ************************/
+ a,a:visited, a:hover, a:active {
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#81b3d2;
+}
+a:hover{
+  color:#d73444;
+}
+
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom: 0.80em;
+}
+a.before:before,a.after:after{
+  text-decoration:none;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+a.third:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+  transform:translateX(-50%);        
+}
+
+a.before:hover:before,a.after:hover:after{
+  width:60%;
+  
+}
+
+  
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 25px 1%;
+  }
+
+   /***********************
+ Animation - Link
+ ************************/
+ a,a:visited, a:hover, a:active {
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#81b3d2;
+}
+a:hover{
+  color:#d73444;
+}
+
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom: 1.30em;
+}
+a.before:before,a.after:after{
+  text-decoration:none;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+a.third:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+  transform:translateX(-50%);        
+}
+
+a.before:hover:before,a.after:hover:after{
+  width:50%;
+  
+}
+.teacher {
+  font-family: 'Satisfy', cursive;
+  padding-left:7px;
+  margin-top:15px;
+  font-size: 18px;
+  color: rgba(0,0,0,.7);
+  position: absolute;
+}
+
+  
+}
+
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/***********************
+H1B Visa page
+************************/
+.h5 {
+  color: #ff0;
+  font-size: 16px;
+}
+.school {
+  margin: 0px;
+}
+.click {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Satisfy', cursive;
+}
+.link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color:#ff6347;
+}
+ul, li {
+  list-style: none;
+}

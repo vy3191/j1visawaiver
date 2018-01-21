@@ -1,0 +1,14 @@
+{
+  "name": "j1visawaiver",
+  "version": "1.0.0",
+  "description": "J1 Visa Waiver",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "\"venky\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
