@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .main article h1 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .main aside {
@@ -160,6 +160,20 @@ nav a:hover {
 /*************************
 Media Queries
 *************************/
+/*@media only screen and (max-width: 480px) {
+    p.thirty {
+       padding-left:5px;
+    }
+    p.sixty {
+      padding-left:10px;
+    }
+    p.ninty {
+      padding-left: 12px;
+    }
+    p.one-two {
+      padding-left: 15px;
+    }
+}*/
 
 @media only screen and (min-width: 480px) {
 
@@ -392,12 +406,17 @@ H1B Visa page
   margin-bottom: 20px;
   color:#ff6347;
 }
+ul {
+  padding-left:10px;
+}
 ul, li {
   list-style: none;
+
 }
 
 a {
   color:#6ab47b;
+  text-decoration:none;
 }
 #orange {
   color:#FF8C00;
@@ -413,6 +432,10 @@ ul.stage li {
 }
 
 /* unvisited link */
+a {
+  text-align: left;
+  display: inline-block;
+}
 a:link {
     /*color:#6ab47b;;*/
     color:#f00;
@@ -442,17 +465,17 @@ a:active {
 }
 
 p.thirty {
-  padding-left:30px;
+  padding-left:7px;
 }
 
 p.sixty {
-  padding-left:60px;
+  padding-left:10px;
 }
 p.ninty {
-  padding-left: 90px;
+  padding-left: 12px;
 }
 p.one-two {
-  padding-left: 120px;
+  padding-left: 18px;
 }
 span.font {
   font-weight: 400px;
@@ -474,6 +497,9 @@ div.pic > img {
      position: absolute;
      top: 25;
      right:0;
+}
+address, ul {
+  text-align: left;
 }
 aside.praxis {
   padding-left:25px;
