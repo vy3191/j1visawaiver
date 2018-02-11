@@ -521,3 +521,12 @@ aside.praxis ul a {
 .fb-comments {
   padding-left: 5px;
 }
+
+h4.embassy {
+  margin: 5px 0px;
+  color: rgba(255,0,0,.5);
+}
+
+#embassy {
+  color:#013220 ;
+}
